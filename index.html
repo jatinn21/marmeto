@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmeto Task</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- google fonts link -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+    <section class="photoSection">
+        <p class="big_image_container">
+        </p>
+        <div class="multi_images_container">
+            <p class="img img1"></p>
+            <p class="img img2"></p>
+            <p class="img img3"></p>
+            <p class="img img4"></p>
+        </div>
+    </section>
+    <section class="productSection">
+        <div class="headerSection">
+            <h1>Marmeto</h1>
+            <span class="title">Embrace Sideboard</span>
+        </div>
+        <div class="priceSection">
+            <p>
+                <span class="currentPrice">12999.00</span>
+                <span class="discount"></span>
+            </p>
+            <p class="previousPrice">
+                19999.00
+            </p>
+        </div>
+        <div class="colorSection">
+            <p class="section_title">Choose a Color</p>
+            <section class="colorPicker_Container">
+                <div class="color">
+                    <p class="insideColor" style=" background-color: red;">
+                        <span class="material-symbols-outlined tick_icon" id="tick1" onclick="ShowTick(1,dataset.color)"
+                            data-color="Red">
+                            done
+                        </span>
+                    </p>
+
+                </div>
+                <div class="color">
+                    <p class="insideColor" style=" background-color: rgb(90, 140, 25);">
+                        <span class="material-symbols-outlined tick_icon hidden" id="tick2"
+                            onclick="ShowTick(2,dataset.color)" data-color="Green">
+                            done
+                        </span>
+                    </p>
+                </div>
+                <div class="color">
+                    <p class="insideColor" style=" background-color: rgb(131, 133, 234);">
+                        <span class="material-symbols-outlined tick_icon hidden" id="tick3"
+                            onclick="ShowTick(3,dataset.color)" data-color="Purple">
+                            done
+                        </span>
+                    </p>
+                </div>
+                <div class="color">
+                    <p class="insideColor" style=" background-color:  rgb(255, 207, 215);">
+                        <span class="material-symbols-outlined tick_icon hidden" id="tick4"
+                            onclick="ShowTick(4,dataset.color)" data-color="Pink">
+                            done
+                        </span>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="sizeSection">
+            <p class="section_title">Choose a Size</p>
+            <section class="size_Container">
+                <div class="option" id="option1" data-size="Small" onclick="selectOption(1,dataset.size)"
+                    style="background-color: rgba(56, 94, 207, 0.88)">
+                    <div class="circle" id="option1Circle">
+                        <div class="dot"></div>
+                    </div>
+                    Small
+                </div>
+
+                <div class="option" id="option2" data-size="Medium" onclick="selectOption(2,dataset.size)">
+                    <div class="circle" id="option2Circle"></div>
+                    Medium
+                </div>
+
+                <div class="option" id="option3" data-size="Large" onclick="selectOption(3,dataset.size)">
+                    <div class="circle" id="option3Circle"></div>
+                    Large
+                </div>
+
+                <div class="option" id="option4" data-size="Extra Large" onclick="selectOption(4,dataset.size)">
+                    <div class="circle" id="option4Circle"></div>
+                    Extra Large
+                </div>
+
+                <div class="option" id="option5" data-size="XXL" onclick="selectOption(5,dataset.size)">
+                    <div class="circle" id="option5Circle"></div>
+                    XXL
+                </div>
+            </section>
+            <section class="quantity_Cart_section">
+                <p class="quantity_counter">
+                    <span class="minusBtn">-</span>
+                    <span id="quantity_Number">1</span>
+                    <span class="addBtn">+</span>
+                </p>
+                <p class="cartBtn_Container" onclick="note()">
+                    <span class="material-symbols-outlined">
+                        shopping_bag
+                    </span>
+                    <span>Add To Cart</span>
+                </p>
+            </section>
+            <section class="note">
+            </section>
+        </div>
+        <section class="lightText">
+            The Embrace Sideboard is a stylist wear. With a top cloth designed to provide superior protection and look
+            great, this storage solution is both functional and attractive. It fits seamlessly into any home decor, with
+            clean lines and a timeless look. Crafted from premium materials for a combination of style, durability, and
+            reliability.
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
