@@ -1,4 +1,5 @@
 let selectedOption = null;
+// Default setting of size = "small" and color = "Red";
 let productSize = "Small",
   productColor = "Red";
 
